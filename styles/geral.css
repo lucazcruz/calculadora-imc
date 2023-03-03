@@ -1,0 +1,59 @@
+:root {
+  font-size: 62.5%;
+
+  --hue: 220;
+
+  --bg-body: hsl(var(--hue), 80%, 8%);
+  --title-color: hsl(var(--hue), 68%, 15%);
+
+  --button-bg: hsl(var(--hue), 97%, 31%);
+  --button-color: hsl(var(--hue), 0%, 100%);
+
+  --border-color: hsla(var(--hue), 9%, 31%, 0.302);
+  --label-color: hsl(var(--hue), 100%, 14%);
+  --input-color: hsl(var(--hue), 11%, 15%);
+  --input-bg: hsl(var(--hue), 23%, 89%);
+  --input-outline: hsl(var(--hue), 97%, 31%);
+  --placeholder: hsla(var(--hue), 9%, 31%, 0.502);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background: #01205f;
+}
+
+body {
+  background: var(--bg-body);
+  height: 100vh;
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+body, input, button{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem; 
+}
+
+button {
+  background: var(--button-bg);
+  color: #fff;
+  padding: 16px 0px;
+  margin-top: 3.2rem;
+  width: 100%;
+  border: none;
+  border-radius: .6rem;
+  font-weight: bold;
+
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .8rem;
+}

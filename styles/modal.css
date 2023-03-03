@@ -1,0 +1,65 @@
+.modal-wrapper.open {
+  display: grid;
+}
+
+.modal-wrapper {
+  background: #1e1e1e33;
+  position: absolute;
+  inset: 0;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: #fff;
+  border-radius: .6rem;
+  padding: clamp(2.4rem, 4vw, 4.8rem) clamp(2.4rem, 5vw, 6.4rem) clamp(2.4rem, 5vw, 6.4rem);
+  margin: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+} 
+
+.modal-table {
+  border-collapse: collapse;
+  margin-top: clamp(2rem, 2vw, 3.2rem);
+}
+
+.modal-table th {
+  color: var(--title-color);
+  font-size: clamp(1.2rem, 3vw, 1.7rem);
+}
+
+.modal-table td {
+  color: var(--label-color);
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  line-height: 1.8rem;
+}
+
+.modal-table th, 
+.modal-table td {
+  font-family: 'Roboto', sans-serif;
+  text-align: start;
+
+  border-bottom: 1px solid var(--border-color);
+
+  padding: clamp(.5rem, 1vw, 1rem) clamp(.3rem, 1vw, 1rem);
+  width: clamp(10rem, 20vw, 20rem);
+}
+
+.modal-table tr td:nth-child(3) {
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  cursor: pointer;
+  transition: transform .6s;
+}
+
+.close:hover {
+  transform: rotate(180deg) scale(1.1);
+}

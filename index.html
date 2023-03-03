@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <title>IMC</title>
+</head>
+<body>
+
+  <div class="alert-error"> Digite somente números </div>
+
+  <main class="imc-wrapper">
+    <h1 class="title">Cálculo de IMC</h1>
+    <form>
+      <div class="input-wrapper">
+        <label for="weight">Peso (kg)</label>
+        <input type="text" id="weight" placeholder="60">
+      </div>
+      <div class="input-wrapper">
+        <label for="height">Altura (cm)</label>
+        <input type="text" id="height" placeholder="165">
+      </div>
+      <button type="submit">Calcular IMC <img src="./assets/arrow.svg" alt="seta para a direita"></button>
+    </form>
+  </main>
+
+  <div class="modal-wrapper">
+    <div class="modal">
+      <img class="close" src="assets/close.svg" alt="button close">
+      <h2 class="title"></h2>
+
+      <table class="modal-table">
+        <thead>
+          <tr>
+            <th>IMC</th>
+            <th>CLASSIFICAÇÃO</th>
+            <th>OBESIDADE (GRAU)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>MENOR QUE 18,5</td>
+            <td>MAGREZA</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>ENTRE 18,5 E 24,9</td>
+            <td>NORMAL</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td> ENTRE 25,0 E 29,9</td>
+            <td>SOBREPESO</td>
+            <td>I</td>
+          </tr>
+          <tr>
+            <td>ENTRE 30,0 E 39,9</td>
+            <td>OBESIDADE</td>
+            <td>II</td>
+          </tr>
+          <tr>
+            <td>MAIOR QUE 40,0</td>
+            <td>OBESIDADE GRAVE</td>
+            <td>III</td>
+          </tr>
+
+        </tbody>
+      </table>
+      
+    </div>
+  </div>
+   
+  <script src="./scripts/main.js" type="module"></script>
+</body>
+</html>
